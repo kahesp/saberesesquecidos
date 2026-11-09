@@ -17,6 +17,24 @@ a{color:#12181F}a:hover{color:#3B2A00}
 </style>
 <style>img{max-width:100%} *{box-sizing:border-box}
 @media (max-width:640px){h1{font-size:40px !important} h2{font-size:30px !important}}</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '930192959414143');
+fbq('track', 'PageView');
+fbq('track', 'ViewContent', {content_name: 'Saberes Esquecidos', content_type: 'product', value: 19.90, currency: 'BRL'});
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=930192959414143&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 <body>
 <div style="font-family: Inter, sans-serif; color: #12181F; background: #F7F2E7; width: 100%">
@@ -339,5 +357,12 @@ a{color:#12181F}a:hover{color:#3B2A00}
 
 <div style="height: 22px; background: repeating-linear-gradient(-55deg, #F2A51A 0 26px, #111 26px 52px)"></div>
 </div>
+<script>
+document.querySelectorAll('a[href*="pay.cakto.com.br"]').forEach(function(a){
+  a.addEventListener('click', function(){
+    if (window.fbq) fbq('track', 'InitiateCheckout', {content_name: 'Saberes Esquecidos', value: 19.90, currency: 'BRL', num_items: 1});
+  });
+});
+</script>
 </body>
 </html>
